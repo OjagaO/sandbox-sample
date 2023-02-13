@@ -4,12 +4,24 @@
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./src/styles.css" />
+    <script src="./src/index.js"></script>
   </head>
 
   <body>
     <p>下記にJSを記述していきます。HTMLも変更しました</p>
-    <div id="app"></div>
-
-    <script src="./src/index.js"></script>
+    <div id="app">
+      <div>
+        <input id="input" type="text" />
+        <button id="addBtn">+</button>
+      </div>
+      <p>未完了のタスク</p>
+      <ul id="todo_area">
+        <li>a <button>kannryou</button><button>sakujo</button></li>
+      </ul>
+    </div>
+    <div>
+      <p>完了済みのタスク</p>
+      <ul id="comp_todo"></ul>
+    </div>
   </body>
 </html>
